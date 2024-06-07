@@ -19,11 +19,12 @@ Slides with content of the topic (pt-BR):<br> https://docs.google.com/presentati
 
 لحظه اجرای code coverage برای دیدن درصد پوشش ها بدون اعمال تغییر در کد تست:
 
+![image](https://github.com/sahm124/az_testCoverage/assets/62812464/3cf7f35e-dbdc-401d-83ac-21bb3bea4da8)
 
 
 
 بعد اعمال تغییر در کد تست ها برای افزایش درصد پوشش کد اصلی:
-
+![image](https://github.com/sahm124/az_testCoverage/assets/62812464/67687451-6d30-46a9-8cb3-b9bb22ad4f1e)
 
 
 
@@ -61,5 +62,16 @@ TrafficTest.java
 شرح: این تست اطمینان حاصل می‌کند که متد delete در کلاس PersonServiceImpl به درستی عمل می‌کند و شخص با نام معتبر را حذف می‌ کند.
 
 منطق تست: این تست اطمینان حاصل می‌کند که متد delete در کلاس PersonServiceImpl به درستی عمل می‌کند و شخص با نام معتبر را حذف می‌کند. این تست شبیه‌سازی رفتار مخزن برای حذف شخص و تأیید اینکه متد delete مخزن با نام موردنظر فراخوانی شده است.
+
+
+نتایج code coverage report ماننده اعمالی که روی پروژه تستی داخل آموزش انجام شده بود:
+
+![image](https://github.com/sahm124/az_testCoverage/assets/62812464/3297de04-0085-4a6a-99bc-e4d2f7941548)
+
+![image](https://github.com/sahm124/az_testCoverage/assets/62812464/e40258ba-cadc-405c-ba3e-8763c90e8599)
+
+![image](https://github.com/sahm124/az_testCoverage/assets/62812464/4075c31d-b65e-4d3a-8fa4-3337493f521e)
+
+
 
 </div>
