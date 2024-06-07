@@ -2,7 +2,7 @@ package com.unittest.codecoverage.service;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 import java.util.List;
 
@@ -27,6 +27,17 @@ public class PersonServiceTest {
 	PersonService service = new PersonServiceImpl();
 	@Mock
 	PersonRepository repository;
+
+	@Test
+	public void testUpdate_shouldUpdatePersonWithSuccessWhenAllPersonsInfoIsFilled() {
+		Person person = new Person();
+		person.setName("Updated Name");
+		person.setAge(25);
+		person.setGender(Gender.F);
+		doNothing().when(repository).update(any(Person.class));
+		service.update(person);
+		verify(repository).update(person);
+	}
 	
 	@Test
 	public void testInsert_shouldInsertPersonWithSuccessWhenAllPersonsInfoIsFilled() {
