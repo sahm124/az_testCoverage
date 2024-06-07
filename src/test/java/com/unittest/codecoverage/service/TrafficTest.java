@@ -4,6 +4,10 @@ import org.junit.jupiter.api.Test;
 
 
 import static org.junit.jupiter.api.Assertions.*;
+import com.unittest.codecoverage.models.Traffic;
+
+import com.unittest.codecoverage.models.StreetDirectionFlow;
+import com.unittest.codecoverage.models.TrafficLigth;
 
 
 public class TrafficTest {
