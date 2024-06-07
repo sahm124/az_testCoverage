@@ -29,6 +29,14 @@ public class PersonServiceTest {
 	PersonRepository repository;
 
 	@Test
+	public void testDelete_shouldDeletePersonWithSuccessWhenNameIsValid() {
+		String name = "Valid Name";
+		doNothing().when(repository).delete(any(String.class));
+		service.delete(name);
+		verify(repository).delete(name);
+	}
+
+	@Test
 	public void testUpdate_shouldUpdatePersonWithSuccessWhenAllPersonsInfoIsFilled() {
 		Person person = new Person();
 		person.setName("Updated Name");
